@@ -45,7 +45,8 @@ clipProc:
 	; this will get your game window size
 	WinGetTitle, winTitle, ahk_exe %procGame%
 	WinGetPos, X, Y, W, H, %winTitle%
-	
+	w := w - 1
+	h := h - 1
 	;//trap mouse
 	ClipCursor( true, X, Y, W, H)
 	
