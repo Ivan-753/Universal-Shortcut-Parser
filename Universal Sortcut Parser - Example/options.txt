@@ -1,0 +1,23 @@
+test script blank testArg1 arg2
+test run C:\Program Files\Notepad++\notepad++.exe --help
+
+faf file D:\Program Files\Downlord's FAF Client\downlords-faf-client.exe
+faf script borderlessOptimisation ForgedAlliance.exe downlords-faf-client.exe
+
+
+sc run steam://rungameid/9420
+sc script borderlessOptimisation SupremeCommander.exe -
+
+maps file D:\Program Files\fafmapeditor_alpha_v0704_WIP1\FAForeverMapEditor.exe
+maps script borderlessOptimisation SupremeCommander.exe FAForeverMapEditor.exe
+
+
+clear script killOnProcessEnd
+
+
+deSCFA run steam://rungameid/9420
+deSCFA script definitive SupremeCommander.exe -
+
+deMAPS file D:\Program Files\fafmapeditor_alpha_v0704_WIP1\FAForeverMapEditor.exe
+deMAPS script definitive SupremeCommander.exe FAForeverMapEditor.exe
+
