@@ -87,8 +87,19 @@ else
 {
 	; auto Set Monitor Size
 	SysGet, Mon1, Monitor, 1 ;//get monitor 1 resolution
-	width := % Mon1Left ; //set width resolution
-	height := % Mon1Bottom ; //set width resolution
+	if(Mon1Right != 0)
+		width := Mon1Right ; //set width resolution
+	else if(Mon1Left != 0)
+		width := % Mon1Left
+	else 
+		width := 1920
+
+	if(Mon1Bottom != 0)
+		height := Mon1Bottom ; //set width resolution
+	else if(Mon1Top != 0)
+		height := Mon1Top
+	else 
+		height := 1080
 	
 	;//if the value is negative change it to positive number
 	if(width < 0)
